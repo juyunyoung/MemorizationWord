@@ -8,36 +8,33 @@
 
     <Button
         android:id="@+id/homeBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="25dp"
+        android:layout_width="76dp"
+        android:layout_height="60dp"
         android:text="Home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/shuffleBtn"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="653dp" />
 
     <Button
         android:id="@+id/shuffleBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_width="102dp"
+        android:layout_height="60dp"
         android:text="Shuffle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="653dp" />
 
     <Button
         android:id="@+id/saveBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="25dp"
+        android:layout_width="76dp"
+        android:layout_height="60dp"
         android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/shuffleBtn" />
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="655dp" />
+
+    <Button
+        android:id="@+id/saveBtn2"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="Vocabulary"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="653dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
