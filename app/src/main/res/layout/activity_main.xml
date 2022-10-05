@@ -1,74 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    //상단 고정
-    <TextView
-        android:id="@+id/textView"
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="상단 고정"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:gravity="center"/>
+        android:layout_height="match_parent" />
 
-    //스크롤뷰
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            ... 기능 구현 ...
-
-        </LinearLayout>
-    </ScrollView>
-
-
-
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <Button
-        android:id="@+id/homeBtn"
-        android:layout_width="76dp"
-        android:layout_height="60dp"
-        android:text="Home"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="653dp" />
+        android:layout_weight="1"
+        app:itemBackground="@color/purple_200"
+        app:itemIconTint="@drawable/menu_click_color"
+        app:itemTextColor="@drawable/menu_click_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navi_menu"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/shuffleBtn"
-        android:layout_width="102dp"
-        android:layout_height="60dp"
-        android:text="Shuffle"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="653dp" />
-
-    <Button
-        android:id="@+id/saveBtn"
-        android:layout_width="76dp"
-        android:layout_height="60dp"
-        android:text="Save"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="655dp" />
-
-    <Button
-        android:id="@+id/saveBtn2"
-        android:layout_width="102dp"
-        android:layout_height="wrap_content"
-        android:text="Vocabulary"
-        tools:layout_editor_absoluteX="281dp"
-        tools:layout_editor_absoluteY="653dp" />
-    </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
