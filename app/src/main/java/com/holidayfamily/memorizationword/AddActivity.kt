@@ -1,13 +1,11 @@
 package com.holidayfamily.memorizationword
 
-import android.content.Intent
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class ShuffleActivity : AppCompatActivity() {
+class AddActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_shuffle)
-
+        setContentView(R.layout.activity_add)
     }
 }
