@@ -9,4 +9,5 @@ class RecodeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recode)
 
     }
+
 }
